@@ -14,7 +14,7 @@ import { getAllUsers } from "./Fetch-requests.jsx";
 import groups from "./groups.js";
 import io from "socket.io-client";
 
-const socket = io("https://communication-1-server.onrender.com/");
+const socket = io("http://localhost:3000/");
 const ChatView = () => {
   const [selected, setSelected] = useState(null);
 
